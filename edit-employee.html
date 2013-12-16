@@ -1,0 +1,31 @@
+<div ng-controller="EmpEditModalController" class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 ng-show="newEmp">Create New User</h3>
+        <h3 ng-hide="newEmp">Edit User: {{ username }}</h3>
+      </div>
+      
+      <div class="modal-body">
+        <form class="form-horizontal" role="form">
+          <div class="form-group">
+            <label for="inputfirstName1" class="col-sm-2 control-label">First&nbsp;Name</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="inputfirstName1" placeholder="First Name">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputlastName1" class="col-sm-2 control-label">Last&nbsp;Name</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="inputlastName1" placeholder="Last Name">
+            </div>
+          </div>
+        </form>
+      </div>
+      
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" ng-click="addEmp('john','doe','GL')">Save changes</button>
+      </div>
+    </div><!-- /.modal-content -->
+</div><!-- /.modal -->

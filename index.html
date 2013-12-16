@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en" ng-app="employeeApp">
+
+<head>
+    <meta charset="utf-8">
+    <title>Binding Example</title>
+    <link data-require="bootstrap-css@3.0.2" data-semver="3.0.2" rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" />
+    
+    <script data-require="angular.js@1.2.4" data-semver="1.2.4" src="http://code.angularjs.org/1.2.3/angular.js"></script>
+  <script data-require="jquery@*" data-semver="2.0.3" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+  <script data-require="bootstrap@*" data-semver="3.0.2" src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+  <script src="app.js"></script>
+  
+</head>
+
+<body>
+<div class="container">
+    
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          
+          <div class="hero-unit"><h1>Binding Example</h1></div>
+         
+          <input type="text" ng-model="data.message">
+          
+          <div class="{{data.message}}">This is wrapped with whatever is in the input</div>
+          
+          
+        </div>
+      </div>
+    </div>
+
+</div>
+
+
+  
+  
+  
+
+
+
+</body>
+</html>
